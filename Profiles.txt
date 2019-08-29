@@ -1,0 +1,10 @@
+Compagnie: Axel Le Best
+Image: C:/Users/Axel/Desktop/Le saint dossier/Code/Python/Programmes/Donjon & Naheulbeuk/Donjon de Naheulbeuk.png
+Chef: Ménestrel
+Difficultée: Bouseux (Facile)
+Donjon: 0
+Compagnie: La lolocompanie
+Image: C:/Users/Axel/Desktop/Le saint dossier/Code/Python/Programmes/Donjon & Naheulbeuk/Donjon de Naheulbeuk.png
+Chef: Magicienne
+Difficultée: Bouseux (Facile)
+Donjon: 0
