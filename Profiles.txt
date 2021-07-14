@@ -1,10 +1,5 @@
-Compagnie: Axel Le Best
-Image: C:/Users/axtha/Documents/GitHub/Donjon-Naheulbeuk/Donjon de Naheulbeuk.png
-Chef: Menestrel
-Difficultee: Bouseux (Facile)
-Donjon: 0
-Compagnie: La lolocompanie
-Image: C:/Users/axtha/Documents/GitHub/Donjon-Naheulbeuk/Donjon de Naheulbeuk.png
-Chef: Magicienne
-Difficultee: Bouseux (Facile)
+Compagnie: Les fiers de Hache
+Image: C:/Users/axtha/Downloads/55e349373c576481ca82b379fb8c721a_auto_x2.png
+Chef: Barbare
+Difficult�e: Bouseux (Facile)
 Donjon: 0

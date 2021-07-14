@@ -141,7 +141,7 @@ def _Game():
 			if CDG == "Ogre (Déconseillé)":
 				CDG = "Ogre"
 			f.write("Chef: " + CDG + "\n")
-			f.write("Difficultée: " + Difficultée.get() + "\n")
+			f.write("Difficultee: " + Difficultée.get() + "\n")
 			f.write("Donjon: 0\n")
 			Create.destroy()
 
