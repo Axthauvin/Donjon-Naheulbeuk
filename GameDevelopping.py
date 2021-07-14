@@ -60,11 +60,12 @@ DonjonNumber = W.create_text(235, 137.5, text = "Donjon n° " + donjon, font="Fo
 
 
 #Informations sur le personnage selectionné
+
+PlayerInfoBG2 = W.create_polygon(425, 100, 425, 125, 450, 100, fill = "darkgrey", outline = "darkgrey")
+PlayerCharacterNameBG = W.create_rectangle(220, 100, 425, 125, fill = "darkgrey", outline = "darkgrey")
+
 #Nom Perso
-PlayerCharacterNameBG = W.create_rectangle(220, 100, 385, 125, fill = "darkgrey", outline = "black")
 CharacterName = W.create_text(235, 102.5, text = "Toute la companie", font="Folkard 13 italic bold", fill = "White", anchor = NW)
-PlayerInfoBG2 = W.create_polygon(385, 100, 385, 125, 400, 100, fill = "darkgrey", outline = "black")
-PlayerCharacterNameBGPetirCarré = W.create_rectangle(384, 101, 386, 124, fill = "darkgrey", outline = "darkgrey")
 
 #Fond pièce
 image = Image.open(path + "FondPersos.png")
@@ -196,6 +197,7 @@ def Generate(x, y):
 		PictureGenerate2 = Image.open(ImageTogenerate2)
 		MySolToGenerate2 = ImageTk.PhotoImage(PictureGenerate2)
 		LesImages.append(MySolToGenerate2)
+	
 	#Ajoute à une liste l'Image Mur
 	AddImage("Wall.png")
 	#Ajoute à une liste l'Image Dalle1
@@ -215,10 +217,13 @@ def Generate(x, y):
 	#Ajoute à une liste l'Image Stairs2
 	AddImage("Stairs2.png")
 
-	for j in range(0, round(hs / 50)):
-		for i in range(0, round(ws / 50) + 1):
+	for j in range(0, round(hs / 50) - 6):
+		for i in range(0, round(ws / 50)):
 			FindText = DonjonPart[j][i]
+			print("j", j)
+			print("i", i)
 			Sol = FindFloor(FindText)
+			print(Sol)
 			if Sol == "Dalle":
 				#Met une image aléatoire pour chaque dalle
 				x = random.randint(1,4)
@@ -307,6 +312,6 @@ RG.bind("<Right>", PersoTourneR)
 RG.bind("<Up>", PersoTourneU)
 RG.bind("<Down>", PersoTourneD)
 
-Consigne("Bienvenue sur le jeu du\nDonjon de Naheulbeuk","Pour commencer, utilisez les touches fléchées pour vous déplacer.","Touches.png")
+Consigne("Bienvenue sur le jeu du\nDonjon de Naheulbeuk","Pour commencer, utilisez les touches fléchées pour \n vous déplacer.","Touches.png")
 W.tag_lower("Floor")
 RG.mainloop()

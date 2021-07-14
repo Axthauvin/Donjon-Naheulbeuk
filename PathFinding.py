@@ -225,8 +225,8 @@ def Generate(x, y):
 	#Ajoute à une liste l'Image Stairs2
 	AddImage("Stairs2.png")
 
-	for j in range(0, round(hs / 50)):
-		for i in range(0, round(ws / 50) + 1):
+	for j in range(0, round(hs / 50) - 6):
+		for i in range(0, round(ws / 50)):
 			FindText = DonjonPart[j][i]
 			Sol = FindFloor(FindText)
 			if Sol == "Dalle":
