@@ -1,0 +1,16 @@
+P: Joueur
+=: Couloir Droite/Gauche
+|: Couloir Haut/Bas
+T: T Croisement Haut (T)
+R: T Croisement Bas(_|_)
+O: Pièce
+
+
+
+
+
+
+
+
+
+https://d0njon-naheulbeuk.skyrock.com/1.html
